@@ -115,3 +115,29 @@ $(document).ready(function () {
     });
 
 }); // close $(document).ready()
+
+
+
+$(document).ready(function () {
+
+    $('.city-select').change(function () {
+        var selectedCity = $('.city-select').val();
+
+        if (selectedCity === 'Madrid') {
+          $('.city-feedback').html('Have some "jamon iberico" for me');
+        }
+        else if (selectedCity === 'Barcelona') {
+          $('.city-feedback').html('Say hi to Messi for me. El Clasico, 5:00 p.m.');
+        }
+        else if (selectedCity === 'Miami') {
+          $('.city-feedback').html('Have a croqueta for me');
+        }
+        else if (selectedCity === 'Paris') {
+          $('.city-feedback').html('Have a croissant for me');
+        }
+        else {
+          $('.city-feedback').html('Make a selection already. 🔪');
+        }
+    });
+
+}); // close $(document).ready()
