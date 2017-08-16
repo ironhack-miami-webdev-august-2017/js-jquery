@@ -83,21 +83,29 @@ $(document).ready(function () {
             case 32: // space bar key
             case 38: // up arrow key
             case 87: // "w" key
+              // prevent browser from scrolling from keypresses
+              theEvent.preventDefault();
               myDragon.bottom += speed;
               break;
 
             case 39: // right arrow key
             case 68: // "d" key
+              // prevent browser from scrolling from keypresses
+              theEvent.preventDefault();
               myDragon.right -= speed;
               break;
 
             case 40: // down arroy key
             case 83: // "s" key
+              // prevent browser from scrolling from keypresses
+              theEvent.preventDefault();
               myDragon.bottom -= speed;
               break;
 
             case 37: // left arrow key
             case 65: // "a" key
+              // prevent browser from scrolling from keypresses
+              theEvent.preventDefault();
               myDragon.right += speed;
               break;
         }
