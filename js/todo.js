@@ -43,3 +43,29 @@ $(document).ready(function () {
   }); // close $('.btn').click()
 
 }); // close $(document).ready()
+
+
+
+$(document).ready(function () {
+
+    $('.poof').click(function () {
+        // get the current selection from the dropdown
+        var selection = $('.function').val();
+
+        if (selection === 'hide') {
+          // hide() / show()
+          $('ul').toggle(5000);
+        }
+
+        else if (selection === 'fade') {
+          // fadeOut() / fadeIn()
+          $('ul').fadeToggle(5000);
+        }
+
+        else if (selection === 'slide') {
+          // slideUp() / slideDown()
+          $('ul').slideToggle(5000);
+        }
+    });
+
+}); // close $(document).ready()

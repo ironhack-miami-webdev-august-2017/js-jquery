@@ -46,3 +46,12 @@ li {
 i {
   padding-left: 2%;
 }
+
+
+.controls {
+  overflow: auto;
+}
+
+.controls > div {
+  float: left;
+}
