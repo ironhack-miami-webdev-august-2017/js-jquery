@@ -68,4 +68,42 @@ $(document).ready(function () {
         }
     });
 
+
+    var myDragon = {
+      right: 0,
+      bottom: 0
+    };
+
+    var speed = 20;
+
+    $(document).keydown(function (theEvent) {
+        console.log('You just pressed: ' + theEvent.keyCode);
+
+        switch (theEvent.keyCode) {
+            case 32: // space bar key
+            case 38: // up arrow key
+            case 87: // "w" key
+              myDragon.bottom += speed;
+              break;
+
+            case 39: // right arrow key
+            case 68: // "d" key
+              myDragon.right -= speed;
+              break;
+
+            case 40: // down arroy key
+            case 83: // "s" key
+              myDragon.bottom -= speed;
+              break;
+
+            case 37: // left arrow key
+            case 65: // "a" key
+              myDragon.right += speed;
+              break;
+        }
+
+        $('.dragon').css('right', myDragon.right);
+        $('.dragon').css('bottom', myDragon.bottom);
+    });
+
 }); // close $(document).ready()

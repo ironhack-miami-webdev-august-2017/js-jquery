@@ -55,3 +55,11 @@ i {
 .controls > div {
   float: left;
 }
+
+
+.dragon {
+  width: 200px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
