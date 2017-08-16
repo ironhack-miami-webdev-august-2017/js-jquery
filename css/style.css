@@ -2,3 +2,38 @@ h1 {
   margin: 0;
   transition: 1s;
 }
+
+
+.changable-image {
+  height: 500px;
+}
+
+.post h2 {
+  font-size: 25px;
+}
+
+.poop h2 {
+  color: #DE7D48;
+  font-size: 20px;
+}
+
+.poop h2::before {
+  content: '💩';
+}
+
+.warm h2,
+.warm span {
+  color: #E3A72F;
+  font-size: 35px;
+}
+
+.hot h2,
+.hot span {
+  color: crimson;
+  font-size: 45px;
+  font-style: italic;
+}
+
+.hot h2::after {
+  content: '🔥';
+}
