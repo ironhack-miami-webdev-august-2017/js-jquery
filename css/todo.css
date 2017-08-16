@@ -1,0 +1,48 @@
+.container {
+  width: 700px;
+  margin: 0 auto;
+  font-family: Arial;
+  border-radius: 4px;
+  background-color: #34495E;
+}
+
+h1 {
+  color: #a37c7f;
+  text-align: center;
+  margin-top: 10px;
+  padding: 15px;
+  border-bottom: 3px solid #666;
+}
+
+.btn {
+  border-radius: 8px;
+  padding: 5px 10px;
+  font-size: 22px;
+  text-decoration: none;
+  margin: 20px;
+  position: relative;
+  display: inline-block;
+  background-color: #55acee;
+}
+
+
+.btn:hover {
+  background-color: #6FC6FF;
+}
+
+body {
+    background: linear-gradient(270deg, #1736B2, #a37c7f);
+}
+
+li {
+  list-style: none;
+  text-align: left;
+  padding: 30px;
+  transition: all .3s ease;
+  color: #fff;
+  font-size: 16px;
+}
+
+i {
+  padding-left: 2%;
+}

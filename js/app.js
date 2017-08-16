@@ -104,3 +104,19 @@ $(document).ready(function () {
     });
 
 }); // close $(document).ready()
+
+
+
+$(document).ready(function () {
+    $('.heart').click(function (theEvent) {
+        // "this" is the DOM object that was just clicked
+        // "theEvent.currentTarget" is also the DOM object that was just clicked
+        $(this).addClass('on');
+
+        // "prevAll()" gets you all the "older" siblings
+        $(this).prevAll().addClass('on');
+
+        // "nextAll()" gets you all the "younger" siblings
+        $(this).nextAll().removeClass('on');
+    });
+});
